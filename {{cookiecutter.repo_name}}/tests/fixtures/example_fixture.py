@@ -10,5 +10,5 @@ from tests.consts import PROJECT_DIR
 @pytest.fixture(scope="session")
 def test_session_id() -> str:
     """Demonstrate how pytest fixtures are used."""
-    test_session_id = str(PROJECT_DIR.name) + str(uuid4())[:6]
+    test_session_id = str(PROJECT_DIR.name) + str(uuid4().hex)
     return test_session_id

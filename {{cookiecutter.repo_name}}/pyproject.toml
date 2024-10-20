@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "{{cookiecutter.repo_name}}"
-authors = [{ name = "Eric Riddoch", email = "some-email@gmail.com" }]
+authors = [{ name = "Minh Mốc Meo", email = "minh@xuvi.vn" }]
 description = "My package description"
 readme = "README.md"
 requires-python = ">=3.7"
@@ -33,7 +33,12 @@ markers = ["slow: marks tests as slow (deselect with '-m \"not slow\"')"]
 
 [tool.black]
 line-length = 119
-exclude = ["venv"]
+extend-exclude = '''
+(
+  venv/
+  | venv
+)
+'''
 
 [tool.flake8]
 docstring-convention = "all"
@@ -52,13 +57,13 @@ line_length = 119
 
 [tool.pylint."messages control"]
 disable = [
-    "line-too-long",
-    "trailing-whitespace",
-    "missing-function-docstring",
-    "consider-using-f-string",
-    "import-error",
-    "too-few-public-methods",
-    "redefined-outer-name",
+  "line-too-long",
+  "trailing-whitespace",
+  "missing-function-docstring",
+  "consider-using-f-string",
+  "import-error",
+  "too-few-public-methods",
+  "redefined-outer-name",
 ]
 
 [tool.ruff]

@@ -28,13 +28,18 @@
         "ms-azuretools.vscode-docker",
         // GitHub
         "github.vscode-github-actions",
-        "GitHub.copilot",
-        "GitHub.copilot-labs",
+        // "GitHub.copilot",
+        // "GitHub.copilot-labs",
+        "Codeium.codeium",
         // Ctrl+Alt+V / Cmd+Alt+V paste image from clipboard
         "mushan.vscode-paste-image",
         // autocompletion for file paths
         "christian-kohler.path-intellisense",
         // jump to definition of pytest fixtures
         "nickmillerdev.pytest-fixtures",
+        // Compare folders
+        "moshfeu.compare-folders",
+        // Makefile
+        "ms-vscode.makefile-tools",
     ]
 }

@@ -32,6 +32,6 @@ def project_dir() -> Path:
 
 
 def generate_test_session_id() -> str:
-    """Return a andomly generated, unique string."""
-    test_session_id = str(uuid4())[:6]
+    """Return a randomly generated, unique string."""
+    test_session_id = str(uuid4().hex)
     return test_session_id

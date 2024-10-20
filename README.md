@@ -1,4 +1,4 @@
-# Python Cookiecutter Project Template
+# Python Project Template Generator
 
 ## Overview
 
@@ -49,7 +49,7 @@ pip install cookiecutter
 # cookie cut the template, answering the prompts, e.g.
 #  - repo_name: my-awesome-package
 #  - package_import_name: my_awesome_package
-cookiecutter https://github.com/phitoduck/python-course-cookiecutter-v2
+cookiecutter https://github.com/minhxuvi/python_project_generator
 ```
 
 
@@ -91,7 +91,7 @@ This project consists of a tool designed to generate GitHub repositories pre-con
 
 ## Repositories
 
-1. [**Python Cookiecutter Template**](https://github.com/phitoduck/python-course-cookiecutter-v2): This repository contains template files for generating new Python project repositories.
+1. [**Python Cookiecutter Template**](https://github.com/minhxuvi/python_project_generator): This repository contains template files for generating new Python project repositories.
    - **Template Files**: Include `Makefile`, `.pre-commit-config.yaml`, `pyproject.toml`, source(`src/`) and `tests/` folders, and more.
    - **Placeholders**: Uses placeholders (e.g., `{{ cookiecutter.repo_name }}`) for project-specific values that will be populated during repository generation.
 
@@ -141,8 +141,8 @@ graph TD;
 ├── requirements.txt
 ├── run.sh
 ├── .github/workflows/
-│   └── code-quality-checks-and-tests.yaml
-│   └── create_or_update_repo.yml
+│   └── build-test.yaml
+│   └── create-or-update-repo.yml
 ├── tests/
 │   ├── conftest.py
 │   ├── consts.py
@@ -155,7 +155,3 @@ graph TD;
 ```
 
 * **
-
-### Contributed By:
-
-✍🏼[**Amit Vikram Raj**](https://www.linkedin.com/in/avr27/)

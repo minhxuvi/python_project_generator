@@ -1,4 +1,4 @@
 {
-    "repo_name": "repo-name",
-    "package_import_name": "example_package"
+  "repo_name": "my-awesome-repo",
+  "package_import_name": "my_awesome_package"
 }
