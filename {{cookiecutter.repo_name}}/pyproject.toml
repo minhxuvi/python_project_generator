@@ -35,15 +35,15 @@ markers = ["slow: marks tests as slow (deselect with '-m \"not slow\"')"]
 line-length = 119
 extend-exclude = '''
 (
-  venv/
-  | venv
+  .venv/
+  | .venv
 )
 '''
 
 [tool.flake8]
 docstring-convention = "all"
 ignore = ["D107", "D212", "E501", "W503", "W605", "D203", "D100"]
-exclude = ["venv"]
+exclude = [".venv"]
 max-line-length = 119
 
 # radon

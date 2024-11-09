@@ -41,8 +41,8 @@ This project provides a tool to generate Python project templates using Cookiecu
 
 ```bash
 # Install cookiecutter into an isolated virtual environment
-python -m venv ./venv/
-source ./venv/bin/activate
+python -m venv ./.venv/
+source ./.venv/bin/activate
 pip install --upgrade pip
 pip install cookiecutter
 
