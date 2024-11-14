@@ -1,0 +1,37 @@
+def String dstDir = 'tmp_dir'
+
+pipeline {
+    agent any
+    triggers {
+        pollSCM('* * * * *')
+    }
+    parameters {
+        string(name: 'DIR_TO_COPY', defaultValue: '*')
+        string(name: 'DST_BRANCH', defaultValue: 'main')
+        string(name: 'DST_URL')
+    }
+    stages {
+        stage('SCM') {
+            steps {
+                checkout([$class: 'GitSCM',
+                            branches: [[name: "${params.DST_BRANCH}"]],
+                            extensions: [
+                                [$class: 'RelativeTargetDirectory', relativeTargetDir: dstDir],
+                                [$class: 'SubmoduleOption', disableSubmodules: true]],
+                            userRemoteConfigs: [[credentialsId: 'github', url: "${params.DST_URL}"]]])
+            }
+        }
+        stage('Init') {
+            steps {
+                dir(dstDir) {
+                    sh'''
+                        cp -rf ../$DIR_TO_COPY .
+                        git add .
+                        git commit -m "IPCF-0000: Add $dir"
+                        git push
+                    '''
+                }
+            }
+        }
+    }
+}
