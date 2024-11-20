@@ -41,5 +41,7 @@
         "moshfeu.compare-folders",
         // Makefile
         "ms-vscode.makefile-tools",
+        // pdf
+        "tomoki1207.pdf",
     ]
 }

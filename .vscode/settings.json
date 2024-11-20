@@ -1,4 +1,8 @@
 {
+    "terminal.integrated.env.windows": {
+        "CHERE_INVOKING": "1"
+    },
+    "workbench.editor.wrapTabs": true,
     "python.testing.pytestArgs": [
         "tests"
     ],
@@ -41,9 +45,5 @@
             "color": "lightgreen"
         }
     ],
-    "makefile.configureOnOpen": false,
-    "terminal.integrated.env.windows": {
-        "CHERE_INVOKING": "1"
-    },
-    "workbench.editor.wrapTabs": true
+    "makefile.configureOnOpen": false
 }
