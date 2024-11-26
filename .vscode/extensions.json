@@ -1,5 +1,7 @@
 {
     "recommendations": [
+        // wsl
+        "ms-vscode-remote.remote-wsl",
         // official python extensiosn
         "ms-python.python",
         "ms-python.black-formatter",
@@ -44,6 +46,8 @@
         // pdf
         "tomoki1207.pdf",
         // svg
-        "SimonSiefke.svg-preview"
+        "SimonSiefke.svg-preview",
+        // mdx
+        "unifiedjs.vscode-mdx"
     ]
 }
