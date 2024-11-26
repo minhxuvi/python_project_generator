@@ -1,7 +1,10 @@
 {
-    "terminal.integrated.env.windows": {
-        "CHERE_INVOKING": "1"
-    },
+    "files.exclude": {
+        ".*": true,
+        "**/.git": false,
+        "**/.venv": false,
+        "**/.vscode": false,
+      },
     "workbench.editor.wrapTabs": true,
     "python.testing.pytestArgs": [
         "tests"
