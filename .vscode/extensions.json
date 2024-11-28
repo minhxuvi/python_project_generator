@@ -48,6 +48,8 @@
         // svg
         "SimonSiefke.svg-preview",
         // mdx
-        "unifiedjs.vscode-mdx"
+        "unifiedjs.vscode-mdx",
+        // groovy
+        "NicolasVuillamy.vscode-groovy-lint"
     ]
 }
