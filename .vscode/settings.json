@@ -50,5 +50,8 @@
             "color": "lightgreen"
         }
     ],
-    "makefile.configureOnOpen": false
+    "makefile.configureOnOpen": false,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
 }
