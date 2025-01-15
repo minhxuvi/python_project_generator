@@ -1,11 +1,9 @@
 {
     "workbench.colorTheme": "Default Dark Modern",
     "files.exclude": {
-        ".*": true,
         "**/.git": false,
         "**/.venv": false,
         "**/.vscode": false,
-        "**/.vscode/**": false
     },
     "workbench.editor.wrapTabs": true,
     "python.testing.pytestArgs": [
