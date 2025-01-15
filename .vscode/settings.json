@@ -5,7 +5,8 @@
         "**/.git": false,
         "**/.venv": false,
         "**/.vscode": false,
-      },
+        "**/.vscode/**": false
+    },
     "workbench.editor.wrapTabs": true,
     "python.testing.pytestArgs": [
         "tests"
